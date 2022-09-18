@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+  <remote name="clo_kernel_davinci"
+          fetch="https://github.com/AI2202-AOSPA"
+          sync-c="true"
+          sync-tags="false"
+          revision="topaz" />
+
+  <project name="kernel_qcom_proprietary" path="kernel_platform/qcom/proprietary" remote="clo_kernel_davinci" >
+    <linkfile dest="kernel_platform/msm-kernel/arch/arm64/boot/dts/vendor" src="devicetree" />
+  </project>
+  <project name="vendor_qcom_proprietary_audio-devicetree" path="vendor/qcom/proprietary/audio-devicetree" remote="clo_kernel_davinci" />
+  <project name="vendor_qcom_proprietary_camera-devicetree" path="vendor/qcom/proprietary/camera-devicetree" remote="clo_kernel_davinci" />
+  <project name="vendor_qcom_proprietary_cvp-devicetree" path="vendor/qcom/proprietary/cvp-devicetree" remote="clo_kernel_davinci" />
+  <project name="vendor_qcom_proprietary_display-devicetree" path="vendor/qcom/proprietary/display-devicetree" remote="clo_kernel_davinci" />
+  <project name="vendor_qcom_proprietary_mmrm-devicetree" path="vendor/qcom/proprietary/mmrm-devicetree" remote="clo_kernel_davinci" />
+  <project name="vendor_qcom_proprietary_video-devicetree" path="vendor/qcom/proprietary/video-devicetree" remote="clo_kernel_davinci" />
+</manifest>
