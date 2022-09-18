@@ -6,6 +6,12 @@
           sync-tags="false"
           revision="topaz" />
 
+  <project name="AI2202/kernel_platform_msm-kernel" path="kernel_platform/msm-kernel" remote="github" revision="topaz" >
+    <linkfile dest="kernel_platform/common/build.config.msm.waipio" src="build.config.msm.waipio"/>
+    <linkfile dest="kernel_platform/common/build.config.msm.waipio.tuivm" src="build.config.msm.waipio.tuivm"/>
+    <linkfile dest="kernel_platform/common/build.config.msm.lahaina" src="build.config.msm.lahaina"/>
+  </project>
+
   <project name="kernel_qcom_proprietary" path="kernel_platform/qcom/proprietary" remote="clo_kernel_davinci" >
     <linkfile dest="kernel_platform/msm-kernel/arch/arm64/boot/dts/vendor" src="devicetree" />
   </project>
@@ -15,4 +21,8 @@
   <project name="vendor_qcom_proprietary_display-devicetree" path="vendor/qcom/proprietary/display-devicetree" remote="clo_kernel_davinci" />
   <project name="vendor_qcom_proprietary_mmrm-devicetree" path="vendor/qcom/proprietary/mmrm-devicetree" remote="clo_kernel_davinci" />
   <project name="vendor_qcom_proprietary_video-devicetree" path="vendor/qcom/proprietary/video-devicetree" remote="clo_kernel_davinci" />
+
+  <project name="AI2202/vendor_qcom_opensource_camera-kernel" path="vendor/qcom/opensource/camera-kernel" remote="github" revision="topaz" />
+  <project name="AI2202/vendor_qcom_opensource_display-drivers" path="vendor/qcom/opensource/display-drivers" remote="github" revision="topaz" />
+  <project name="AI2202/vendor_qcom_opensource_audio-kernel-ar" path="vendor/qcom/opensource/audio-kernel" remote="github" revision="topaz" />
 </manifest>
