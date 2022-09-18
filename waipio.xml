@@ -17,6 +17,7 @@
   <project name="kernel/common" path="kernel_platform/common" remote="clo_kernel_waipio" />
   <project name="platform/vendor/opensource/cvp-kernel" path="vendor/qcom/opensource/cvp-kernel" remote="clo_vendor_waipio" />
   <project name="platform/vendor/opensource/dataipa" path="vendor/qcom/opensource/dataipa" remote="clo_vendor_waipio" />
+  <project name="platform/vendor/opensource/mmrm-driver" path="vendor/qcom/opensource/mmrm-driver" revision="refs/tags/VIDEO.LA.2.0.r1-05700-WAIPIO.0" />
   <project name="platform/vendor/opensource/eva-kernel" path="vendor/qcom/opensource/eva-kernel" remote="clo_vendor_waipio" />
   <project name="platform/vendor/opensource/video-driver" path="vendor/qcom/opensource/video-driver" revision="refs/tags/VIDEO.LA.2.0.r1-05700-WAIPIO.0" />
   <project name="platform/vendor/opensource/touch-drivers" path="vendor/qcom/opensource/touch-drivers" remote="clo_vendor_waipio" />
