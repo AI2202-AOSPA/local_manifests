@@ -6,6 +6,10 @@
           sync-tags="false"
           revision="topaz" />
 
+  <project name="AI2202/vendor_qcom_opensource_audio-hal_primary-hal" path="vendor/qcom/opensource/audio-hal/primary-hal" remote="github" revision="topaz-taro" />
+  <project name="AI2202/vendor_qcom_opensource_agm" path="vendor/qcom/opensource/agm" remote="github" revision="topaz-taro" />
+  <project name="AI2202/vendor_qcom_opensource_pal" path="vendor/qcom/opensource/pal" remote="github" revision="topaz-taro" />
+
   <project name="AI2202/kernel_platform_msm-kernel" path="kernel_platform/msm-kernel" remote="github" revision="topaz" >
     <linkfile dest="kernel_platform/common/build.config.msm.waipio" src="build.config.msm.waipio"/>
     <linkfile dest="kernel_platform/common/build.config.msm.waipio.tuivm" src="build.config.msm.waipio.tuivm"/>
