@@ -6,6 +6,8 @@
           sync-tags="false"
           revision="topaz" />
 
+  <project name="AI2202-AOSPA/device_asus_davinci" path="device/asus/davinci" remote="github" revision="topaz" />
+
   <project name="AI2202/vendor_qcom_opensource_audio-hal_primary-hal" path="vendor/qcom/opensource/audio-hal/primary-hal" remote="github" revision="topaz-taro" />
   <project name="AI2202/vendor_qcom_opensource_agm" path="vendor/qcom/opensource/agm" remote="github" revision="topaz-taro" />
   <project name="AI2202/vendor_qcom_opensource_pal" path="vendor/qcom/opensource/pal" remote="github" revision="topaz-taro" />
