@@ -1,34 +1,36 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
-  <remote name="clo_kernel_davinci"
-          fetch="https://github.com/AI2202-AOSPA"
+  <remote name="AI2202"
+          fetch="https://github.com/AI2202"
           sync-c="true"
           sync-tags="false"
           revision="topaz" />
 
-  <project name="AI2202-AOSPA/device_asus_davinci" path="device/asus/davinci" remote="github" revision="topaz" />
+  <!-- Device -->
+  <project name="AI2202-AOSPA/device_asus_davinci" path="device/asus/davinci" remote="AI2202" />
 
-  <project name="AI2202/vendor_qcom_opensource_audio-hal_primary-hal" path="vendor/qcom/opensource/audio-hal/primary-hal" remote="github" revision="topaz-taro" />
-  <project name="AI2202/vendor_qcom_opensource_agm" path="vendor/qcom/opensource/agm" remote="github" revision="topaz-taro" />
-  <project name="AI2202/vendor_qcom_opensource_pal" path="vendor/qcom/opensource/pal" remote="github" revision="topaz-taro" />
+  <!-- HALs -->
+  <project name="AI2202/vendor_qcom_opensource_audio-hal_primary-hal" path="vendor/qcom/opensource/audio-hal/primary-hal" remote="AI2202" revision="topaz-davinci" />
+  <project name="AI2202/vendor_qcom_opensource_agm" path="vendor/qcom/opensource/agm" remote="AI2202" revision="topaz-davinci" />
+  <project name="AI2202/vendor_qcom_opensource_pal" path="vendor/qcom/opensource/pal" remote="AI2202" revision="topaz-davinci" />
 
-  <project name="AI2202/kernel_platform_msm-kernel" path="kernel_platform/msm-kernel" remote="github" revision="topaz" >
+  <!-- Kernel -->
+  <project name="AI2202/kernel_platform_msm-kernel" path="kernel_platform/msm-kernel" remote="AI2202" >
     <linkfile dest="kernel_platform/common/build.config.msm.waipio" src="build.config.msm.waipio"/>
-    <linkfile dest="kernel_platform/common/build.config.msm.waipio.tuivm" src="build.config.msm.waipio.tuivm"/>
-    <linkfile dest="kernel_platform/common/build.config.msm.lahaina" src="build.config.msm.lahaina"/>
   </project>
 
-  <project name="kernel_qcom_proprietary" path="kernel_platform/qcom/proprietary" remote="clo_kernel_davinci" >
+  <!-- Kernel (DTS) -->
+  <project name="kernel_qcom_proprietary" path="kernel_platform/qcom/proprietary" remote="AI2202" >
     <linkfile dest="kernel_platform/msm-kernel/arch/arm64/boot/dts/vendor" src="devicetree" />
   </project>
-  <project name="vendor_qcom_proprietary_audio-devicetree" path="vendor/qcom/proprietary/audio-devicetree" remote="clo_kernel_davinci" />
-  <project name="vendor_qcom_proprietary_camera-devicetree" path="vendor/qcom/proprietary/camera-devicetree" remote="clo_kernel_davinci" />
-  <project name="vendor_qcom_proprietary_cvp-devicetree" path="vendor/qcom/proprietary/cvp-devicetree" remote="clo_kernel_davinci" />
-  <project name="vendor_qcom_proprietary_display-devicetree" path="vendor/qcom/proprietary/display-devicetree" remote="clo_kernel_davinci" />
-  <project name="vendor_qcom_proprietary_mmrm-devicetree" path="vendor/qcom/proprietary/mmrm-devicetree" remote="clo_kernel_davinci" />
-  <project name="vendor_qcom_proprietary_video-devicetree" path="vendor/qcom/proprietary/video-devicetree" remote="clo_kernel_davinci" />
+  <project name="vendor_qcom_proprietary_audio-devicetree" path="vendor/qcom/proprietary/audio-devicetree" remote="AI2202" />
+  <project name="vendor_qcom_proprietary_camera-devicetree" path="vendor/qcom/proprietary/camera-devicetree" remote="AI2202" />
+  <project name="vendor_qcom_proprietary_cvp-devicetree" path="vendor/qcom/proprietary/cvp-devicetree" remote="AI2202" />
+  <project name="vendor_qcom_proprietary_display-devicetree" path="vendor/qcom/proprietary/display-devicetree" remote="AI2202" />
+  <project name="vendor_qcom_proprietary_mmrm-devicetree" path="vendor/qcom/proprietary/mmrm-devicetree" remote="AI2202" />
+  <project name="vendor_qcom_proprietary_video-devicetree" path="vendor/qcom/proprietary/video-devicetree" remote="AI2202" />
 
-  <project name="AI2202/vendor_qcom_opensource_camera-kernel" path="vendor/qcom/opensource/camera-kernel" remote="github" revision="topaz" />
-  <project name="AI2202/vendor_qcom_opensource_display-drivers" path="vendor/qcom/opensource/display-drivers" remote="github" revision="topaz" />
-  <project name="AI2202/vendor_qcom_opensource_audio-kernel-ar" path="vendor/qcom/opensource/audio-kernel" remote="github" revision="topaz" />
+  <project name="AI2202/vendor_qcom_opensource_camera-kernel" path="vendor/qcom/opensource/camera-kernel" remote="AI2202" />
+  <project name="AI2202/vendor_qcom_opensource_display-drivers" path="vendor/qcom/opensource/display-drivers" remote="AI2202" />
+  <project name="AI2202/vendor_qcom_opensource_audio-kernel-ar" path="vendor/qcom/opensource/audio-kernel" remote="AI2202" />
 </manifest>
