@@ -9,11 +9,6 @@
   <!-- Device -->
   <project name="device_asus_davinci" path="device/asus/davinci" remote="AI2202" />
 
-  <!-- HALs -->
-  <project name="vendor_qcom_opensource_audio-hal_primary-hal" path="vendor/qcom/opensource/audio-hal/primary-hal" remote="AI2202" revision="topaz-davinci" />
-  <project name="vendor_qcom_opensource_agm" path="vendor/qcom/opensource/agm" remote="AI2202" revision="topaz-davinci" />
-  <project name="vendor_qcom_opensource_pal" path="vendor/qcom/opensource/pal" remote="AI2202" revision="topaz-davinci" />
-
   <!-- Kernel -->
   <project name="kernel_platform_msm-kernel" path="kernel_platform/msm-kernel" remote="AI2202" >
     <linkfile dest="kernel_platform/common/build.config.msm.waipio" src="build.config.msm.waipio"/>
